@@ -1,0 +1,45 @@
+.todo {
+  font-family: "Neucha", serif;
+  display: flex;
+  border-radius: 0.3125rem;
+  margin-top: 0.9375rem;
+  padding: 1.25rem;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  transition: 0.2s;
+  width: 29%;
+}
+.todo_text {
+  flex: 1;
+  padding: 0.3125rem;
+  font-size: 1.25rem;
+  word-break: break-all;
+  &:focus {
+    outline: none;
+  }
+}
+.icon {
+  font-size: 1.5625rem;
+  margin-left: 0.625rem;
+  cursor: pointer;
+}
+.edit_input {
+  outline: none;
+  border: none;
+  width: 70%;
+  padding-left: 0.625rem;
+}
+
+@media (max-width: 75rem) {
+  .todo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 53.125rem) {
+  .input {
+    width: 95%;
+  }
+  .todo {
+    width: 95%;
+  }
+}
